@@ -17,11 +17,11 @@ public class DiceRollerApp {
 
         } else {
             int i = s.nextInt();
-            //dummy clear
-            if (i <= 0) {
-                System.out.println("Number must be greater than 0.");
+            if (i <= 1) {
+                System.out.println("Number must be greater than 1.");
                 diceRoll();
             } else {
+                //dummy clear
                 s.nextLine();
                 // roll dice twice. Use math.ceiling to get a whole int for the RNG math.random generates from 0 -> 1
                 System.out.println("Rolled " + (int) Math.ceil(Math.random() * i));
