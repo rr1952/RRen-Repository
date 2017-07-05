@@ -2,7 +2,8 @@ import java.util.Scanner;
 import java.util.Random;
 
 /**
- * Created by RIchard on 6/29/2017.
+ * Created by: Richard
+ * Date of Creation: 6/29/2017
  */
 public class DiceRollerApp {
 
