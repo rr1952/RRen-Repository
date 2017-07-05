@@ -23,22 +23,21 @@ public class PigLatinTrans {
             //scans the next WORD into a stringbuilder object.
             word = new StringBuilder(scan.next().toLowerCase());
             matchernonchar = nonchar.matcher(word);
-            if (matchernonchar.find()) System.out.println("oboinonchar");
+            if (matchernonchar.find());
             else {
                 matcher = vowels.matcher(word);
                 // get the index location of the first vowel.
                 if(matcher.find()) {
                     // might need an int to hold matcher.start();
-                    if(matcher.start() == 0) {
+                    if (matcher.start() == 0) {
                         word.append("w");
-                    }
-                    else {
+                    } else {
                         //appends the beginning till the first vowel to the end.
-                        word.append(word.substring(0,matcher.start()));
-                        word.delete(0,matcher.start());
+                        word.append(word.substring(0, matcher.start()));
+                        word.delete(0, matcher.start());
                     }
-                    word.append("ay");
                 }
+                word.append("ay");
 
             }
             System.out.println(word);
