@@ -12,8 +12,8 @@ public class PigLatinTrans {
 
         String cont = "y";
         Scanner scan = new Scanner(System.in);
-        Pattern nonchar = Pattern.compile("[^a-z]");
-        Pattern vowels = Pattern.compile("[aeiou]");
+        Pattern nonchar = Pattern.compile("[^a-zA-Z']");
+        Pattern vowels = Pattern.compile("[aeiouAEIOU]");
         Matcher matchernonchar, matcher;
         StringBuilder word;
         //scans the stringbuilder for non alphabetical characters (excluding contractions)
@@ -21,7 +21,7 @@ public class PigLatinTrans {
         while (cont.equalsIgnoreCase("y")) {
             System.out.println("Please enter a word:");
             //scans the next WORD into a stringbuilder object.
-            word = new StringBuilder(scan.next().toLowerCase());
+            word = new StringBuilder(scan.next());
             matchernonchar = nonchar.matcher(word);
             if (matchernonchar.find());
             else {
@@ -45,6 +45,7 @@ public class PigLatinTrans {
             scan.nextLine();
             System.out.println("Continue? (Y to continue)");
             cont = scan.nextLine();
+
         }
 
     }
