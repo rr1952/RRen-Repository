@@ -2,7 +2,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * Created by: RIchard
+ * Created by: Richard
  * Date of Creation: 7/5/2017
  */
 
@@ -13,7 +13,7 @@ public class BattingStats {
         String cont = "";
         do {
             batStats();
-            System.out.println("Continue? (Y/N)");
+            System.out.println("Contiinue? (Y/N)");
             cont = scan.nextLine();
             while(!(cont.equalsIgnoreCase("Y") ||  cont.equalsIgnoreCase("N"))){
                 System.out.println("Hey, you didn't input Y or N. Try again.");
