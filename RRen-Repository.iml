@@ -13,6 +13,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Bonus5" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Bonus8" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Lab11" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AbstractPolymorphism" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Lab12" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
