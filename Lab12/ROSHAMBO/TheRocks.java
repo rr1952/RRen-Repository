@@ -1,10 +1,10 @@
-/**
+package ROSHAMBO; /**
  * Created by: RIchard
  * Date of Creation: 7/10/2017
  */
 
 /**
- * This class always throws Rock in our Roshambo.
+ * This class always throws Rock in our ROSHAMBO.Roshambo.
  */
 public class TheRocks extends Player {
 

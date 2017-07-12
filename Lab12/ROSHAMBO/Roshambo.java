@@ -1,3 +1,5 @@
+package ROSHAMBO;
+
 /**
  * Created by: RIchard
  * Date of Creation: 7/10/2017

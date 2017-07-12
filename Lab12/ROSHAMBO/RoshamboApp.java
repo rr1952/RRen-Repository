@@ -1,3 +1,5 @@
+package ROSHAMBO;
+
 import java.util.Scanner;
 
 /**
@@ -11,7 +13,7 @@ public class RoshamboApp {
 
         Scanner scan = new Scanner(System.in);
         RPSPlayer player = new RPSPlayer();
-        // create a player first, that way we can set him to TheRocks or TheRandom based on user input.
+        // create a player first, that way we can set him to ROSHAMBO.TheRocks or ROSHAMBO.TheRandom based on user input.
         Player CPU;
         System.out.println("Welcome to RockPaperScissors!");
         System.out.print("Enter your name: ");

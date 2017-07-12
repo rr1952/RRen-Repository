@@ -1,3 +1,5 @@
+package ROSHAMBO;
+
 import java.util.Scanner;
 
 /**
@@ -15,6 +17,7 @@ public class RPSValidator {
         }
         return s;
     }
+
     // Validates whether a proper team was inputted.
     public static Player validateTeam(String input, Scanner scan) {
         while (!(input.equalsIgnoreCase("R") || input.equalsIgnoreCase("CPU"))) {
@@ -22,11 +25,15 @@ public class RPSValidator {
             input = scan.nextLine();
         }
         switch (input.toUpperCase()) {
-            case "R": return new TheRocks();
-            case "CPU": return new TheRandom();
-            default: return null;
+            case "R":
+                return new TheRocks();
+            case "CPU":
+                return new TheRandom();
+            default:
+                return null;
         }
     }
+
     //Validates RPS action.
     public static String validateRPS(String input, Scanner scan) {
         while (!(input.equalsIgnoreCase("R") || input.equalsIgnoreCase("P") || input.equalsIgnoreCase("S"))) {

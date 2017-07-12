@@ -1,4 +1,4 @@
-import java.util.InputMismatchException;
+package ROSHAMBO;
 
 /**
  * Created by: RIchard
