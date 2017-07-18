@@ -55,7 +55,10 @@ public class GameCharacter {
         list.add(new Wizard("Waldo", 1, 9, 3,1));
         list.add(new Wizard("Gandalf",1,10,5,2));
         list.add(new Wizard("Harry", 2, 7, 4,3));
-        for (GameCharacter g: list ) {
+        GameCharacter[] glist = new GameCharacter[5];
+        // to Array you go
+        list.toArray(glist);
+        for (GameCharacter g: glist ) {
             g.play();
         }
     }
