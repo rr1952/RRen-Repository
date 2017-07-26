@@ -1,0 +1,21 @@
+select * from Customers;
+
+select distinct Country from Customers;
+
+select * from Customers where CustomerID LIKE "BL%";
+select * from orders limit 100;
+select * from customers where PostalCode IN (1010, 3012, 12209, 05023);
+select * from Orders WHERE shipregion is not null OR select * from Orders WHERE NOT shipregion is null;
+select * from customers order by country, city;
+insert into customer VALUES('RRen', 'GC.RRen', 'Richard Ren', 'Mr.', '123 ABC ST', 'Troy', 'MI', '48084', 'USA', '123-234-3456', NULL);
+update orders set shipregion = "EuroZone" where ShipCountry = "France";
+Delete * from orderdetails where quantity = 1;
+select avg(quantity), max(quantity), min(quantity) from 'Order Details';
+select avg(quantity), max(quantity), min(quantity), orderID from 'Order Details', group by orderID;
+select customerID from orders where orderID = 10290;
+select * from orders inner join customers on orders.customerid = customers.customerid;
+select ordersID from orders left join customers on orders.customerid = customers.customerid;
+select ordersID from orders right join customers on orders.customerid = customers.customerid;
+select firstname from employees where reportsto is null;
+select firstname from employees where reportsto = 2;
+
