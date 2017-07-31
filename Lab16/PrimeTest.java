@@ -21,8 +21,19 @@ public class PrimeTest {
     }
 
     @Test
-    public void isPrime5() {
-        assertTrue("5 is indeed prime.", Prime.isPrime(5));
+    public void find4thPrime() {
+        int expected = 7;
+        int actual = Prime.nthPrime(4);
+        assertEquals("Not 7.", expected, actual);
     }
 
+    @Test
+    public void find2ndPrime() {
+        assertEquals("Not 3", 3, Prime.nthPrime(2));
+    }
+
+    @Test
+    public void find12thPrime() {
+        assertEquals("not 37", 37, Prime.nthPrime(12));
+    }
 }

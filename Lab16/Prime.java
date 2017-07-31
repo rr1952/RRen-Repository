@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Prime {
 
     public static boolean isPrime(int x) {
@@ -8,5 +10,26 @@ public class Prime {
         }
         if (x < 0) return false;
         return true;
+    }
+
+    public static int nthPrime(int n) {
+        if (n == 1) return 2;
+        int primer = 1;
+        for (int i = 0; i < n; i++) {
+            for (int prime = primer; !isPrime(primer);primer+=2);
+            if (i != n-1) primer += 2;
+        }
+        return primer;
+    }
+    public static void main(String[] args) {
+
+        try {
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Hello to the prime finder!");
+            System.out.println("Please insert the nth prime you'd like to find.");
+            System.out.println("Your prime is: " + nthPrime(scan.nextInt()));
+        } catch (Exception e) {System.out.println(e);}
+
+
     }
 }
