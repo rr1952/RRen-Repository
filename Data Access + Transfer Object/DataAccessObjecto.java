@@ -1,8 +1,6 @@
 import java.util.List;
+/*
 
-/**
- * Created by RIchard on 7/20/2017.
- */
     public interface DataAccessObjecto {
         //Implementing CRUD. Create, Read, Update, Delete.
         //Reading
@@ -14,3 +12,4 @@ import java.util.List;
         //updating
         public void update(int index, Product p);
     }
+    */
